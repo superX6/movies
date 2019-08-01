@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/superX6/movies#readme",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "koa": "^2.7.0",
     "mongoose": "^5.6.7",
     "puppeteer": "^1.19.0"
