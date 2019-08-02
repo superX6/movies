@@ -24,8 +24,12 @@ const after = () => new Promise(resolve => {
   // await initAdmin() // 创建一个账户
   
     // require('./tasks/movie')
-      // await sleep(5000)
+      await sleep(5000)
+        // require('./tasks/trailer')
     // require('./tasks/api')
+    // await sleep(5000)
+    // console.log('99')
+    require('./tasks/qiniu')
 
   const app = new Koa();
   app.use(async ctx => {
