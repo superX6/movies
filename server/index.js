@@ -29,7 +29,7 @@ const after = () => new Promise(resolve => {
     // require('./tasks/api')
     // await sleep(5000)
     // console.log('99')
-    require('./tasks/qiniu')
+    // require('./tasks/qiniu')
 
   const app = new Koa();
   app.use(async ctx => {
