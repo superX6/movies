@@ -7,6 +7,8 @@
     "test": "test"
   },
   "scripts": {
+    "start": "rm -rf dist && rm -rf .cache && NODE_ENV=development nodemon ./start.js",
+    "build": "rm -rf parcel/dist && parcel build src/index.html --no-cache -d dist --public-url /",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,25 +16,56 @@
     "url": "git+https://github.com/superX6/movies.git"
   },
   "author": "",
+  "keywords": [
+    "movie",
+    "trailer"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/superX6/movies/issues"
   },
   "homepage": "https://github.com/superX6/movies#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
-    "glob": "^7.1.4",
-    "koa": "^2.7.0",
+    "antd": "^3.0.0",
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.0",
+    "ejs": "^2.6.1",
+    "glob": "^7.1.2",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
     "koa-router": "^7.4.0",
+    "koa-session": "^5.9.0",
     "koa-static": "^5.0.0",
-    "koa-views": "^6.2.0",
-    "mongoose": "^5.6.7",
-    "nanoid": "^2.0.3",
-    "parcel-bundler": "^1.12.3",
-    "puppeteer": "^1.19.0",
-    "qiniu": "^7.2.2",
-    "ramda": "^0.26.1",
+    "koa-views": "^6.1.4",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.9",
+    "nanoid": "^1.2.2",
+    "pug": "^2.0.3",
+    "puppeteer": "^1.7.0",
+    "qiniu": "^7.2.1",
+    "ramda": "^0.25.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.7"
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.3",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.15",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cssnext": "^1.8.4",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "parcel-bundler": "^1.9.7"
   }
 }
