@@ -5,6 +5,8 @@ const mongoose = require('mongoose')
 const Movie = mongoose.model('Movie')
 
 ;(async () => {
+
+
     const script = resolve(__dirname, '../crawler/trailer-list') //子进程的脚本
     const child = cp.fork(script, []) //创建这个子进程
     let invoked = false   //子进程的标识符

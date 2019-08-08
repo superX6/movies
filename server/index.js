@@ -31,7 +31,7 @@ const useMiddlewares = (app) => {
         initWith => initWith(app)
       ),
       require,
-      name => resolve(__dirname, `./midllerwares/${name}`)
+      name => resolve(__dirname, `./middlewares/${name}`)
     )
   )(MIDDLEWARES)
 }
@@ -48,7 +48,6 @@ const useMiddlewares = (app) => {
         // require('./tasks/trailer')
     // require('./tasks/api')
     // await sleep(5000)
-    // console.log('99')
     // require('./tasks/qiniu')
 
   const app = new Koa();

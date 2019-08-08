@@ -22,22 +22,24 @@ export default class Home extends Component {
   componentDidMount () {
     this._getAllMovies()
   }
-
+  
   //将选择的年份赋给states
   _selectItem = ({ key }) => {
     this.setState({
       selectedKey: key
     })
   }
-
+  
   
   _getAllMovies = () => {
     console.log('测试window.__LOADING__:', window.__LOADING__)
+    console.log(`/api/v0/movies?type=${this.state.type || ''}&year=${this.state.year || ''}`)
 
     request(window.__LOADING__)({
       method: 'get',
       url: `/api/v0/movies?type=${this.state.type || ''}&year=${this.state.year || ''}`
     }).then(res => {
+      console.log(res, 'home data')
       this.setState({ //获取到数据,更新页面状态
         movies: res
       })

@@ -5,7 +5,8 @@ import { Card, Row, Col, Badge, Modal, Spin, Icon } from 'antd'
 import { Link } from 'react-router-dom'
 import 'moment/locale/zh-cn'
 
-const site = 'http://peie35zt9.bkt.clouddn.com/'
+// 七牛存储空间地址
+const site = 'http://pvll4xfju.bkt.clouddn.com/'
 const Meta = Card.Meta
 
 moment.locale('zh-cn')
