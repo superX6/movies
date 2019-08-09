@@ -44,11 +44,11 @@ const useMiddlewares = (app) => {
 
   await initAdmin() // 创建一个账户
   
-    // require('./tasks/movie')
-      // await sleep(5000)
-        // require('./tasks/trailer')
-    // require('./tasks/api')
-    // await sleep(5000)
+    require('./tasks/movie')
+      await sleep(5000)
+        require('./tasks/trailer')
+    require('./tasks/api')
+    await sleep(5000)
     // require('./tasks/qiniu')
 
   const app = new Koa();
