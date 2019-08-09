@@ -1,4 +1,4 @@
-app:
+apps:
   - script: ./server/index.js
     name: 'movies'
     env: 
