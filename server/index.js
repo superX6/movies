@@ -18,7 +18,8 @@ const sleep = time => new Promise(resolve => {
 // 定义一个中间件数据 用ramda 方法将Router 和前端打包的parcel 目录下的内容 全部加载进去
 // common 包含body 解析 session 等 router 为路由 parcel 为内容打包到dist 目录
 
-const MIDDLEWARES = ['common', 'router', 'parcel']
+// const MIDDLEWARES = ['common', 'router', 'parcel']
+const MIDDLEWARES = ['common', 'router'] // 线上部署的时候 用build 单独打包
 
 // map 对象的所言属性一次执行某个函数
 // compose 将多个函数合并为一个函数 从右到左执行
