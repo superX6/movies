@@ -10,7 +10,8 @@ import 'moment/locale/zh-cn'
 
 moment.locale('zh-cn')
 
-const site = 'http://peie35zt9.bkt.clouddn.com/'
+const site = 'http://pvll4xfju.bkt.clouddn.com/'
+
 
 export default class AdminList extends Component {
   constructor (props) {

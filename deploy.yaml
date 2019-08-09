@@ -1,0 +1,23 @@
+app:
+  - script: ./server/index.js
+    name: 'movies'
+    env: 
+      COMMON_VARIABLE: true
+    env_production:
+      NODE_ENV: production
+deploy: 
+  production:
+    user: root
+    host:
+      - 47.99.215.130
+    port: 22
+    ref: origin/master
+    repo:
+      https://github.com/superX6/movies.git
+    path:
+      /home/movies/production
+    ssh_options: StrictHostKeyChecking=no
+    pre-deploy: git fetch --all
+    pre-deploy: 'npm install && npm run build && pm2 startOrRestart deploy.yaml --env production'
+    env: 
+      NODE_ENV: production
