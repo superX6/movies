@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "rm -rf dist && rm -rf .cache && nodemon ./start.js",
-    "build": "rm -rf parcel/dist && parcel build src/index.html --no-cache -d dist --public-url /",
+    "build": "rm -rf dist && parcel build src/index.html --no-cache -d dist --public-url /",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -54,7 +54,7 @@
 
 
 
-    
+
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.5.5",
